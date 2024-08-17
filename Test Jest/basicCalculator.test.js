@@ -16,3 +16,6 @@ test("Return the value of the input a that multipies input b", () =>{
 test("Return the value of the input a that divides input b", () =>{
     expect(divide(5,2)).toBe(2.5);
 })
+test('throws an error when dividing by zero', () => {
+    expect(() => divide(10, 0)).toThrow('Cannot divide by zero');
+});
